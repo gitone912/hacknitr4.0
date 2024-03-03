@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="max-w-2xl w-full">
+        <h1 class="text-3xl font-bold mb-4">Therapy Session</h1>
+
+        <!-- Video List -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Video 1 -->
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold mb-2">5 Signs You’re “Self-Coddling”, NOT Self-Love</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <!-- Example video: "Big Buck Bunny" -->
+                    <iframe class="w-full h-full" src="https://youtube.com/embed/3j9Y29PzjHo?si=jS_Tt9d-Ya2dEKQU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold mb-2">3 Signs You Have Good Child Complex, Not Authentic</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <!-- Example video: "Big Buck Bunny" -->
+                    <iframe class="w-full h-full" src="https://youtube.com/embed/8xdFQLo8tjc?si=J9iJ17tvZJmUjcuD" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold mb-2">7 Green Flags in Yourself to Be Proud Of</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <!-- Example video: "Big Buck Bunny" -->
+                    <iframe class="w-full h-full" src="https://youtube.com/embed/jOAr2IwEw7g?si=EIRhvQ-fHLcnkokW" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold mb-2">5 Signs You're More Socially Intelligent Than You Think</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <!-- Example video: "Big Buck Bunny" -->
+                    <iframe class="w-full h-full" src="https://youtube.com/embed/McyV3TwdpWE?si=kFEuXRfgeyOCWv2Y" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Add more video cards as needed -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ampproject/worker-dom@1.10.0/dist/worker-dom.esm.min.mjs"></script>
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        // Initialize Plyr for video playback
+        document.addEventListener('DOMContentLoaded', () => {
+            const players = Plyr.setup('.plyr');
+        });
+    </script>
+
+    {% endblock %}
+
